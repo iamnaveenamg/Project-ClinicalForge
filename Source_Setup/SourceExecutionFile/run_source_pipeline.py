@@ -30,14 +30,14 @@ PROJECT_ROOT = os.path.abspath(os.path.join(PIPELINE_DIR, ".."))
 # 2. Sequence of Target SQL Execution Units mapped across target directory folders
 SQL_FILES = [
     # Table Creation
-    os.path.join(PROJECT_ROOT, "SourceDB", "00-schema-creation.sql"),
-    os.path.join(PROJECT_ROOT, "SourceDB", "01-Core-Tables.sql"),
-    os.path.join(PROJECT_ROOT, "SourceDB", "02-Clinical-Tables.sql"),
-    os.path.join(PROJECT_ROOT, "SourceDB", "03-Financial-Tables.sql"),
+    os.path.join(PROJECT_ROOT, "Source_Setup/SourceDB", "00-schema-creation.sql"),
+    os.path.join(PROJECT_ROOT, "Source_Setup/SourceDB", "01-Core-Tables.sql"),
+    os.path.join(PROJECT_ROOT, "Source_Setup/SourceDB", "02-Clinical-Tables.sql"),
+    os.path.join(PROJECT_ROOT, "Source_Setup/SourceDB", "03-Financial-Tables.sql"),
     # DML Script Creation
-    os.path.join(PROJECT_ROOT, "SourceMetadata", "01-Core-Data.sql"),
-    os.path.join(PROJECT_ROOT, "SourceMetadata", "02-Clinical-Data.sql"),
-    os.path.join(PROJECT_ROOT, "SourceMetadata", "03-Financial-Data.sql")
+    os.path.join(PROJECT_ROOT, "Source_Setup/SourceMetadata", "01-Core-Data.sql"),
+    os.path.join(PROJECT_ROOT, "Source_Setup/SourceMetadata", "02-Clinical-Data.sql"),
+    os.path.join(PROJECT_ROOT, "Source_Setup/SourceMetadata", "03-Financial-Data.sql")
 ]
 
 print(SQL_FILES)
