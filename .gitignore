@@ -216,3 +216,14 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+
+# Add Files
+test.sql
+SourceDB/Notes.md
+01_clinicalforge_schema_ddl.sql
+patient-vitals.json
+SourceExecutionFile/test.py
+.env
+.venv
+.vscode
